@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background-color: blue;
+}
+
+h1, h2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+/* ---------------------------------- */
+
+.game {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    column-gap: 10px;
+}
+
+.team {
+    display: grid;
+    grid-column: 1;
+    grid-template-columns: 3fr 7fr;
+    padding: 10px;
+}
+
+.game div label {
+    grid-column: 2;
+    border: solid 4px white;
+    color: white;
+    align-items: center;
+}
+
+.game div label img{
+    grid-column: 1;
+    height: auto;
+    max-width: 100%;
+}
+
+.game div input[type = "radio"] {
+    display: none;
+}
+
+.game div input[type="radio"]:checked + label {
+    border: solid 4px red;
+}
+
+/* ---------------------------------- */
+
+.submit {
+    display: flex;
+    justify-content: center;
+}
