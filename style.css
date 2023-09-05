@@ -37,14 +37,16 @@ h1, h2 {
     display: grid;
     grid-column: 1;
     grid-template-columns: 3fr 7fr;
-    padding: 10px;
+    padding: 2vw;
 }
 
 .game div label {
     grid-column: 2;
-    border: solid 4px white;
+    border: solid 0.75vw white;
+    border-radius: 100vw;
     color: white;
     align-items: center;
+    font-size: 8vw;
 }
 
 .game div label img{
@@ -66,4 +68,8 @@ h1, h2 {
 .submit {
     display: flex;
     justify-content: center;
+}
+
+.Auburn {
+    background-color: navy;
 }
