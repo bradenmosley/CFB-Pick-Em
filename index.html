@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  
+    <head>
+        <title>CFB Pick 'Em</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+
+    <body>
+        
+        <h1>College Football Pick 'Em</h1>
+        <h2>Week 1</h2>
+
+        <form method="post" action="https://api.sheetmonkey.io/form/rQ6mx1mceyU4M5gJmHxdaj">
+
+            <input type="hidden" name="Picked" value="x-sheetmonkey-current-date-time" />
+            
+            <div class="login">
+                <label>
+                    Name<br>
+                    <input type="text" name="name" id="name" required>
+                </label>
+            </div>
+
+            <br>
+
+            <div class="game" id="game">
+                
+                <fieldset>
+
+                    <label>
+                        <input type="radio" name="game1" id="Auburn" value="Auburn" required>
+                        Auburn
+                    </label>
+    
+                    <label>
+                        <input type="radio" name="game1" id="Alabama" value="Alabama">
+                        Alabama
+                    </label>
+
+                </fieldset>
+                
+            </div>
+
+            <br>
+            
+            <button type="submit" id="submit">Submit</button>
+
+        </form>
+
+        <script src="script.js"></script>
+
+    </body>
+
+</html>
