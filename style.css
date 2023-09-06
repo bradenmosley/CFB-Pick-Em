@@ -24,42 +24,39 @@ h1, h2 {
 
 /* ---------------------------------- */
 
-.game {
+.gameGrid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
-    column-gap: 10px;
+    grid-template-columns: 2fr 3fr 3fr 2fr;
 }
 
-.team {
-    display: grid;
-    grid-column: 1;
-    grid-template-columns: 3fr 7fr;
-    padding: 2vw;
-}
-
-.game div label {
+.teamAway {
     grid-column: 2;
-    border: solid 0.75vw white;
-    border-radius: 100vw;
-    color: white;
-    align-items: center;
-    font-size: 8vw;
 }
 
-.game div label img{
-    grid-column: 1;
+.teamHome {
+    grid-column: 3;
+}
+
+.teamGrid {
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+    place-items: center;
+    border: solid 4px white;
+    border-radius: 100vw;
+    padding: 10px;
+    color: white;
+}
+
+.teamGrid img{
     height: auto;
     max-width: 100%;
 }
 
-.game div input[type = "radio"] {
+input[type = "radio"] {
     display: none;
 }
 
-.game div input[type="radio"]:checked + label {
+.gameGrid input[type="radio"]:checked + .teamGrid {
     border: solid 4px red;
 }
 
@@ -72,4 +69,20 @@ h1, h2 {
 
 .Auburn {
     background-color: navy;
+}
+
+@media screen and (max-width: 480px) {
+
+    h6 {
+        color: black;
+    }
+
+    .gameGrid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .teamAway {
+        grid-column: 1;
+    }
+
 }
