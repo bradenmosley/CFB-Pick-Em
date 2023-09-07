@@ -3,22 +3,59 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    font-family: 'Inter';
 }
 
 body {
-    background-color: blue;
+    background-color: #1b1b1b;
 }
 
 h1, h2 {
     display: flex;
     justify-content: center;
     text-align: center;
+    font-weight: bold;
     color: white;
 }
+
+input[type = "radio"] {
+    display: none;
+}
+
+/* ---------------------------------- */
 
 .login {
     display: flex;
     justify-content: center;
+    margin: 4vh;
+    color: white;
+}
+
+.login input[type = "text"] {
+    width: 50vw;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    border: solid 2px #151515;
+    border-radius: 5vh;
+    background-color: #252525;
+    color: white;
+}
+
+.login input[type = "text"]::placeholder {
+    color: gray;
+}
+
+.login input[type = "text"]:focus {
+    border: solid 2px #151515;
+    background-color: #252525;
+    color: white;
+}
+
+.login input[type = "text"]:autofill {
+    border: solid 2px #151515;
+    background-color: #252525;
     color: white;
 }
 
@@ -27,6 +64,8 @@ h1, h2 {
 .gameGrid {
     display: grid;
     grid-template-columns: 2fr 3fr 3fr 2fr;
+    column-gap: 2vw;
+    margin: 8vh 0;
 }
 
 .teamAway {
@@ -39,11 +78,13 @@ h1, h2 {
 
 .teamGrid {
     display: grid;
-    grid-template-columns: 4fr 6fr;
+    grid-template-columns: 1fr 2fr;
     place-items: center;
-    border: solid 4px white;
-    border-radius: 100vw;
-    padding: 10px;
+    background-color: #252525;
+    border: solid 2px #252525;
+    border-radius: 5vh;
+    padding: 1.5vw;
+    font-family: 'Share Tech Mono';
     color: white;
 }
 
@@ -52,12 +93,8 @@ h1, h2 {
     max-width: 100%;
 }
 
-input[type = "radio"] {
-    display: none;
-}
-
 .gameGrid input[type="radio"]:checked + .teamGrid {
-    border: solid 4px red;
+    border: solid 2px white;
 }
 
 /* ---------------------------------- */
@@ -67,22 +104,31 @@ input[type = "radio"] {
     justify-content: center;
 }
 
-.Auburn {
-    background-color: navy;
-}
-
-@media screen and (max-width: 480px) {
-
-    h6 {
-        color: black;
-    }
+@media screen and (max-width: 576px) {
 
     .gameGrid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 0.5fr 4.5fr 4.5fr 0.5fr;
     }
 
-    .teamAway {
-        grid-column: 1;
+    .login input[type = "text"] {
+        width: 80vw;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+
+    .login input[type = "text"] {
+        width: 60vw;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+
+    .gameGrid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 5vw;
     }
 
 }

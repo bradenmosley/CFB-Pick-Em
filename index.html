@@ -9,14 +9,14 @@
         <meta http-equiv='pragma' content='no-cache'>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Inter">
         <link rel="stylesheet" href="style.css"/>
     </head>
 
     <body>
         
         <h1>College Football Pick 'Em</h1>
-        <h2>Week 1</h2>
-        <h2>Updated at 10:35</h2>
+        <h2>Week 2</h2>
 
         <form method="post">
 
@@ -24,24 +24,36 @@
             <input type="hidden" name="Week" value="Week 1"/>
             
             <div class="login">
-                <label>
-                    Name<br>
-                    <input type="text" name="name" id="name" required>
-                </label>
+                <input type="text" name="name" autocomplete="name" placeholder="Name" id="name" required>
             </div>
-
-            <br>
 
             <div class="gameGrid">
 
                 <div class="teamAway">
                     <input type="radio" name="game1" id="Auburn" value="Auburn" required>
-                    <label class="teamGrid" for="Auburn"><img src="logos/Auburn.png"></img>Auburn</label>
+                    <label class="teamGrid" for="Auburn"><img src="logos/Auburn.png"></img>AUBURN</label>
+                </div>
+
+                <div class="teamHome">
+                    <input type="radio" name="game1" id="Auburn" value="Auburn" required>
+                    <label class="teamGrid" for="Auburn"><img src="logos/Alabama.png"></img>ALABAMA</label>
                 </div>
                 
             </div>
 
-            <br>
+            <div class="gameGrid">
+
+                <div class="teamAway">
+                    <input type="radio" name="game1" id="Auburn" value="Auburn" required>
+                    <label class="teamGrid" for="Auburn"><img src="logos/Alabama.png"></img>ALABAMA</label>
+                </div>
+                
+                <div class="teamHome">
+                    <input type="radio" name="game1" id="Auburn" value="Auburn" required>
+                    <label class="teamGrid" for="Auburn"><img src="logos/Auburn.png"></img>AUBURN</label>
+                </div>
+                
+            </div>
             
             <div class="submit">
                 <button type="button" id="submit">Submit</button>
