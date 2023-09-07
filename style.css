@@ -77,17 +77,21 @@ input[type = "radio"] {
     display: grid;
     grid-template-columns: 1fr 2fr;
     place-items: center;
-    background-color: #252525;
-    border: solid 2px #252525;
+    text-align: center;
+    background-color: #303030;
+    border: solid 2px #303030;
     border-radius: 5vh;
-    padding: 1.5vw;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 3vw;
+    padding-right: 2vw;
     font-family: 'Share Tech Mono';
     color: white;
 }
 
 .teamGrid img{
     height: auto;
-    max-width: 100%;
+    max-width: 80%;
 }
 
 .gameGrid input[type="radio"]:checked + .teamGrid {
@@ -102,8 +106,7 @@ input[type = "radio"] {
 }
 
 .submit button {
-    width: 25vw;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 4rem;
     text-align: center;
     font-size: 2rem;
     font-weight: bold;
@@ -179,7 +182,7 @@ input[type = "radio"] {
     }
 
     h1 {
-        font-size: 2.25rem;
+        font-size: 2rem;
     }
 
     h2 {
