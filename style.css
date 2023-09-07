@@ -8,12 +8,14 @@
 
 body {
     background-color: #1b1b1b;
+    margin: 40px 0;
 }
 
 h1, h2 {
     display: flex;
     justify-content: center;
     text-align: center;
+    margin-bottom: 20px;
     font-weight: bold;
     color: white;
 }
@@ -37,6 +39,7 @@ input[type = "radio"] {
     text-align: center;
     font-size: 2rem;
     font-weight: bold;
+    outline: none;
     border: solid 2px #151515;
     border-radius: 5vh;
     background-color: #252525;
@@ -49,13 +52,7 @@ input[type = "radio"] {
 
 .login input[type = "text"]:focus {
     border: solid 2px #151515;
-    background-color: #252525;
-    color: white;
-}
-
-.login input[type = "text"]:autofill {
-    border: solid 2px #151515;
-    background-color: #252525;
+    background-color: #303030;
     color: white;
 }
 
@@ -104,31 +101,89 @@ input[type = "radio"] {
     justify-content: center;
 }
 
+.submit button {
+    width: 25vw;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    border: solid 2px #101010;
+    border-radius: 5vh;
+    background-color: #101010;
+    color: white;
+}
+
+.submit button:hover {
+    border: solid 2px #101010;
+    background-color: #252525;
+}
+
+/* ---------------------------------- */
+
+/* Laptop and Larger */
+@media screen and (min-width: 992px) {
+
+    .gameGrid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 5vw;
+    }
+
+    .teamGrid {
+        font-size: 2.25vw;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+}
+
+/* Tablet */
+@media screen and (max-width: 991px) {
+
+    .login input[type = "text"] {
+        width: 60vw;
+    }
+
+    .teamGrid {
+        font-size: 3vw;
+    }
+
+    h1 {
+        font-size: 2.75rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+}
+
+/* Phone */
 @media screen and (max-width: 576px) {
 
     .gameGrid {
         grid-template-columns: 0.5fr 4.5fr 4.5fr 0.5fr;
     }
 
+    .teamGrid {
+        font-size: 4.5vw;
+    }
+
     .login input[type = "text"] {
         width: 80vw;
     }
 
-}
-
-@media screen and (max-width: 992px) {
-
-    .login input[type = "text"] {
-        width: 60vw;
+    h1 {
+        font-size: 2.25rem;
     }
 
-}
-
-@media screen and (min-width: 992px) {
-
-    .gameGrid {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        column-gap: 5vw;
+    h2 {
+        font-size: 1.75rem;
     }
 
 }

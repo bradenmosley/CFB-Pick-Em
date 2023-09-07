@@ -4,9 +4,13 @@
   
     <head>
         <title>CFB Pick 'Em</title>
+        
+        <!-- To always update Github Page -->
         <meta http-equiv='cache-control' content='no-cache'>
         <meta http-equiv='expires' content='0'>
         <meta http-equiv='pragma' content='no-cache'>
+        <!---->
+
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Inter">
@@ -16,52 +20,46 @@
     <body>
         
         <h1>College Football Pick 'Em</h1>
+        
+        <!-- Change to current week number -->
         <h2>Week 2</h2>
 
         <form method="post">
 
+            <!-- Records date and time to the form -->
             <input type="hidden" name="Picked" value="x-sheetmonkey-current-date-time"/>
+            
+            <!-- Change value to current week number -->
             <input type="hidden" name="Week" value="Week 1"/>
             
+            <!-- Name Field -->
             <div class="login">
-                <input type="text" name="name" autocomplete="name" placeholder="Name" id="name" required>
+                <input type="text" placeholder="Name" name="name" autocomplete="off" autocapitalize="words" id="name" required>
             </div>
 
+            <!-- Game List -->
             <div class="gameGrid">
-
                 <div class="teamAway">
-                    <input type="radio" name="game1" id="Auburn" value="Auburn" required>
-                    <label class="teamGrid" for="Auburn"><img src="logos/Auburn.png"></img>AUBURN</label>
+                    <input type="radio" id="away1" name="game1" value="Auburn" required>
+                    <label class="teamGrid" for="away1"><img src="logos/Auburn.png"></img>AUBURN</label>
                 </div>
 
                 <div class="teamHome">
-                    <input type="radio" name="game1" id="Auburn" value="Auburn" required>
-                    <label class="teamGrid" for="Auburn"><img src="logos/Alabama.png"></img>ALABAMA</label>
+                    <input type="radio" id="home1" name="game1" value="Alabama">
+                    <label class="teamGrid" for="home1"><img src="logos/Alabama.png"></img>ALABAMA</label>
                 </div>
-                
             </div>
-
-            <div class="gameGrid">
-
-                <div class="teamAway">
-                    <input type="radio" name="game1" id="Auburn" value="Auburn" required>
-                    <label class="teamGrid" for="Auburn"><img src="logos/Alabama.png"></img>ALABAMA</label>
-                </div>
-                
-                <div class="teamHome">
-                    <input type="radio" name="game1" id="Auburn" value="Auburn" required>
-                    <label class="teamGrid" for="Auburn"><img src="logos/Auburn.png"></img>AUBURN</label>
-                </div>
-                
-            </div>
+            <!---->
             
+            <!-- Submit Button -->
             <div class="submit">
                 <button type="button" id="submit">Submit</button>
             </div>
 
         </form>
 
-        <script src="script.js"></script>
+        <!-- JavaScript Import -->
+        <!-- <script src="script.js"></script> -->
 
     </body>
 
