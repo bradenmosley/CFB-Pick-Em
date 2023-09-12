@@ -173,11 +173,11 @@ input[type = "radio"] {
 
     .login input[type = "text"] {
         width: 80vw;
-        font-size: 1rem;
+        font-size: 1.25rem;
     }
 
     .submit button {
-        font-size: 1rem;
+        font-size: 1.25rem;
     }
 
     h1 {
