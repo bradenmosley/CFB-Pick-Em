@@ -9,6 +9,7 @@
 body {
     background-color: #1b1b1b;
     margin: 40px 0;
+    word-spacing: -2px;
 }
 
 h1, h2 {
