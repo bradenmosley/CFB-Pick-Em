@@ -204,8 +204,8 @@ input[type = "radio"] {
 @media screen and (max-width: 576px) {
 
     body {
-        margin-left: 4vw;
-        margin-right: 4vw;
+        margin-left: 2vw;
+        margin-right: 2vw;
     }
     
     h1 {
